@@ -34,6 +34,7 @@ function setup() {
   //   console.error('Error in async function:', error);
   //   postAuth()
   // });
+  userData={"GUEST":"TRUE"}
   postAuth()
   
   
