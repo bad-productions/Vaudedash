@@ -19,21 +19,22 @@ console.log("%cGaming Division","color:yellow;font-size:10px;font-family:Comic S
 function setup() {
 
   createCanvas(windowWidth, windowHeight)
-  console.log('%c * Changing all console logs to Comic Sans... * \n(you actually thought you could escape the Comic Sans by going to the console?) ', 'color: red;background:black;font-family:Comic Sans MS');
-  text("BAD DEMO SERVICE  Authorizing...\n\nYou must be authorized to access this software",0,10)
-  getUserInfo().then(result => {
-    userData=result
-    if(userData==null){
-      LoginWithReplit().then(function(){console.log("got user login successfully refreshing..");location.refresh()})
-    }
-   console.log("logged in with data:",userData)
-    postAuth()
-  }).catch(error => {
-    clear() 
-    text("Failed to AUTH",0,10)
-    console.error('Error in async function:', error);
-    postAuth()
-  });
+  // console.log('%c * Changing all console logs to Comic Sans... * \n(you actually thought you could escape the Comic Sans by going to the console?) ', 'color: red;background:black;font-family:Comic Sans MS');
+  // text("BAD DEMO SERVICE  Authorizing...\n\nYou must be authorized to access this software",0,10)
+  // getUserInfo().then(result => {
+  //   userData=result
+  //   if(userData==null){
+  //     LoginWithReplit().then(function(){console.log("got user login successfully refreshing..");location.refresh()})
+  //   }
+  //  console.log("logged in with data:",userData)
+  //   postAuth()
+  // }).catch(error => {
+  //   clear() 
+  //   text("Failed to AUTH",0,10)
+  //   console.error('Error in async function:', error);
+  //   postAuth()
+  // });
+  postAuth()
   
   
 }
