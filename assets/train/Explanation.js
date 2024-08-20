@@ -1,0 +1,4 @@
+//So do you see the numbers at the end of the "Vaudedash Train Tileset" well they would be labeled #'s 0000-0014, and there should be a tile guide there too called "How The Vaudedash Train Tileset Works" so take the end numbers (the 0000-0014) and slot them acordingly too the "How The Vaudedash Train Tileset Works" and you can make it different it doesn't have to be 5 by 7 the smallest possible should probably only be 5 by 5 but yeah your welcome now time too continue working on the characters now.
+//WHY DID YOU MAKE THE NAME SO FUCKING LONG.
+//THIS IS CODING NOT GRAMMER
+//I DONT WANNA TYPE ALL THAT SHIT
