@@ -187,6 +187,9 @@ function filterMessage(message){
     if(message.includes("nigger")){
         racism.play()
     }
+    else if(message.includes("fag")){
+      sendChatMessage("I don't like gay people for some reason")
+    }
     else{
         sendChatMessage(message)
     }
