@@ -33,6 +33,7 @@ let touchMode=false;
 let gamepadOn=false
 let playerAnis={test:{walk:null,wallSlide:null,jump:null,fall:null,crouch:{walk:null,idle:null}}}
 let pAni={}
+let racism;
 let Funcs = ["Air", "Solid", "Hit", "End", "Climb"]
 function flipImageHorizontally(image) {
   let flipped = createGraphics(image.width, image.height);
@@ -61,7 +62,7 @@ let texturePacks=
  }
 }
 function gamePreload() {
-    racism = queueLoad('assets/racism',"AUD");
+    
     console.log("Notice:Loading \""+texturePack+"\" textures...")
     let ez={}
     for (let y=0;y<texturePack.length;y++){
@@ -79,6 +80,7 @@ function gamePreload() {
     loadPlayerAnimations()
 
       soundFormats('mp3', 'ogg');
+      racism = queueLoad('assets/racism',"AUD");
       mySound = queueLoad('assets/Notification',"AUD");
     rickRollSound=queueLoad
     touchBtnImg.left=queueLoad("assets/Arrow/arrow_0.png","IMG")
@@ -94,7 +96,7 @@ function touchStarted() {
 let touchBtns={}
 let levelsFinished=0
 let deathCount=0;
-let racism;
+
 let touchBtnImg={}
 let myAchivements=[]
 let gridSize={w:15,h:10}
