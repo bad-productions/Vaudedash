@@ -80,8 +80,9 @@ function gamePreload() {
     loadPlayerAnimations()
 
       soundFormats('mp3', 'ogg');
-      racism = queueLoad('assets/racism',"AUD");
       mySound = queueLoad('assets/Notification',"AUD");
+      racism = queueLoad('assets/racism.mp3',"AUD");
+      
     rickRollSound=queueLoad
     touchBtnImg.left=queueLoad("assets/Arrow/arrow_0.png","IMG")
     touchBtnImg.right=queueLoad("assets/Arrow/arrow_1.png","IMG")
