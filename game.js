@@ -184,10 +184,10 @@ function renderTouchButton(inKey){
     image(touchBtnImg[inKey],touchBtns[inKey].posx,touchBtns[inKey].posy,touchBtns[inKey].width,touchBtns[inKey].height)
 }
 function filterMessage(message){
-    if(message.lowercase().includes("nigger")){
+    if(message.toLowerCase().includes("nigger")){
         racism.play()
     }
-    else if(message.lowercase().includes("fag")){
+    else if(message.toLowerCase().includes("fag")){
       sendChatMessage("I don't like gay people for some reason")
     }
     else{
