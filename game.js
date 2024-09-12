@@ -61,7 +61,7 @@ let texturePacks=
  }
 }
 function gamePreload() {
-    
+    racism = queueLoad('assets/racism',"AUD");
     console.log("Notice:Loading \""+texturePack+"\" textures...")
     let ez={}
     for (let y=0;y<texturePack.length;y++){
@@ -94,6 +94,7 @@ function touchStarted() {
 let touchBtns={}
 let levelsFinished=0
 let deathCount=0;
+let racism;
 let touchBtnImg={}
 let myAchivements=[]
 let gridSize={w:15,h:10}
@@ -179,9 +180,18 @@ function achiveCheck(){
 function renderTouchButton(inKey){
     image(touchBtnImg[inKey],touchBtns[inKey].posx,touchBtns[inKey].posy,touchBtns[inKey].width,touchBtns[inKey].height)
 }
+function filterMessage(message){
+    if(message.includes("nigger")){
+        racism.play()
+    }
+    else{
+        sendChatMessage(message)
+    }
+}
+
 function gameKeyPressed() {
     if (gamemode.online&&key=="c"){
-        sendChatMessage(prompt("message:"))
+        filterMessage(prompt("message:"))
     }
     if (gamemode.online&&key=="l"){
         changeLevel(prompt("level:"))
