@@ -1,2 +1,2 @@
 # Vaudedash
-bad-productions.github.io/Vaudedash
+[public beta](https://bad-productions.github.io/Vaudedash/).
