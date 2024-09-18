@@ -6,7 +6,7 @@ let config = {
 
      
      //Good Luck! -jahames
-     levelToLoad: "levels/TheNewDemo.json"
+     levelToLoad: "levels/Sigma.json"
      ,
      ShowFps: true
      ,
